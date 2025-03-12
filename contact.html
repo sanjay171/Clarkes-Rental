@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Clarke's Car Rental</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Sticky Navbar -->
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a href="index.html">Clarke's Car Rental</a>
+    </div>
+    <ul class="navbar-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="navbar-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="contact-hero">
+    <div class="hero-text">
+      <h1>Contact Us</h1>
+      <p>We're here to help! Reach out to us for any inquiries or assistance.</p>
+    </div>
+  </div>
+
+  <!-- Contact Us Section -->
+  <div class="container">
+    <div class="contact-us">
+      <h2><i class="fas fa-envelope"></i> Get in Touch</h2>
+      <p>
+        Whether you have questions about our services, need assistance with a booking, or just want to say hello, feel free to reach out to us.
+      </p>
+      <div class="contact-info">
+        <div class="contact-card">
+          <i class="fas fa-phone"></i>
+          <h3>Phone</h3>
+          <p><a href="tel:18768024140">1876-802-4140</a></p>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          <p><a href="mailto:clarkesrental@outlook.com">clarkesrental@outlook.com</a></p>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Address</h3>
+          <p>Mendez Point Hill P.O, St. Catherine, Jamaica</p>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-clock"></i>
+          <h3>Business Hours</h3>
+          <p>Monday - Sunday, 8:00 AM - 8:00 PM</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ready for Your Journey Section -->
+  <div class="ready-section">
+    <h2>Are You Ready to Go on Your Journey?</h2>
+    <a href="car-details.html" class="cta-button">Book Your Car Now</a>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-links">
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="car-details.html">Check Out Our Cars</a>
+      <a href="https://facebook.com/clarkescarrental" target="_blank">Follow on Social Media</a>
+    </div>
+    <p>&copy; 2025 Clarke's Car Rental. All rights reserved.</p>
+    <div class="footer-image"></div>
+  </footer>
+
+  <!-- JavaScript for Mobile Menu -->
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navbarLinks = document.querySelector('.navbar-links');
+
+    mobileMenu.addEventListener('click', () => {
+      navbarLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserve Now - Clarke's Car Rental</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Sticky Navbar -->
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a href="index.html">Clarke's Car Rental</a>
+    </div>
+    <ul class="navbar-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="navbar-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Clarke's Car Rental</h1>
+    <p>Drive Your Way!</p>
+  </header>
+
+  <!-- Booking Form Section -->
+  <div class="container">
+    <div class="booking-form">
+      <h2><i class="fas fa-calendar-check"></i> Book Your Rental</h2>
+      <form action="https://formspree.io/f/moveqerp" method="POST">
+        <input type="hidden" name="_subject" value="New Booking Request from Clarke's Car Rental">
+        
+        <!-- Form Fields -->
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+          <label for="pickup-date">Pickup Date:</label>
+          <input type="date" id="pickup-date" name="pickup-date" required>
+        </div>
+
+        <div class="form-group">
+          <label for="return-date">Return Date:</label>
+          <input type="date" id="return-date" name="return-date" required>
+        </div>
+
+        <button type="submit" class="cta-button">Book Now</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Ready for Your Journey Section -->
+  <div class="ready-section">
+    <div class="ready-content">
+      <h2>Are You Ready to Go on Your Journey?</h2>
+      <a href="car-details.html" class="cta-button">Book Your Car Now</a>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-links">
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="car-details.html">Check Out Our Cars</a>
+      <a href="https://facebook.com/clarkescarrental" target="_blank">Follow on Social Media</a>
+    </div>
+    <p>&copy; 2025 Clarke's Car Rental. All rights reserved.</p>
+    <div class="footer-image"></div>
+  </footer>
+
+  <!-- JavaScript for Mobile Menu -->
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navbarLinks = document.querySelector('.navbar-links');
+
+    mobileMenu.addEventListener('click', () => {
+      navbarLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

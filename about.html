@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Clarke's Car Rental</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Sticky Navbar -->
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a href="index.html">Clarke's Car Rental</a>
+    </div>
+    <ul class="navbar-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="navbar-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="about-hero">
+    <div class="hero-text">
+      <h1>About Clarke's Car Rental</h1>
+      <p>Your Trusted Partner for Reliable and Affordable Car Rentals</p>
+    </div>
+  </div>
+
+  <!-- About Us Section -->
+  <div class="container">
+    <div class="about-us">
+      <h2><i class="fas fa-info-circle"></i> Who We Are</h2>
+      <p>
+        At Clarke's Car Rental, we believe that every journey should be comfortable, convenient, and memorable. Whether you're exploring the island or need a reliable vehicle for daily use, we’ve got you covered. Our fleet is well-maintained, and our team is dedicated to ensuring you have the best experience possible.
+      </p>
+
+      <!-- Vision, Mission, and Values -->
+      <div class="about-cards">
+        <div class="about-card">
+          <i class="fas fa-eye"></i>
+          <h3>Our Vision</h3>
+          <p>To be Jamaica's most trusted and customer-focused car rental service, providing reliable and affordable transportation solutions.</p>
+        </div>
+        <div class="about-card">
+          <i class="fas fa-bullseye"></i>
+          <h3>Our Mission</h3>
+          <p>We are committed to offering high-quality vehicles, exceptional customer service, and flexible rental options to meet the needs of both locals and tourists.</p>
+        </div>
+        <div class="about-card">
+          <i class="fas fa-heart"></i>
+          <h3>Our Values</h3>
+          <p>Integrity, reliability, and customer satisfaction are at the core of everything we do.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Team Section (Optional) -->
+  <div class="team-section">
+    <div class="container">
+      <h2><i class="fas fa-users"></i> Meet Our Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="sanjay.jpg" alt="Team Member 1">
+          <h3>Sanjay Clarke</h3>
+          <p>Founder & CEO</p>
+        </div>
+        <div class="team-member">
+          <img src="trevene.jpg" alt="Team Member 2">
+          <h3>Trevene Richards</h3>
+          <p>Fleet Manager</p>
+        </div>
+        <div class="team-member">
+          <img src="angella.jpg" alt="Team Member 3">
+          <h3>Angella Hutchinson</h3>
+          <p>Customer Support</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonials Section (Optional) -->
+  <div class="testimonials-section">
+    <div class="container">
+      <h2><i class="fas fa-comments"></i> What Our Customers Say</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <p>"Clarke's Car Rental made my trip to Jamaica unforgettable! The car was clean, reliable, and affordable. Highly recommend!"</p>
+          <h3>- Sarah Johnson</h3>
+        </div>
+        <div class="testimonial">
+          <p>"Excellent service and friendly staff. I’ll definitely rent from them again on my next visit."</p>
+          <h3>- David Brown</h3>
+        </div>
+        <div class="testimonial">
+          <p>"The best car rental experience I’ve ever had. Thank you, Clarke's Car Rental!"</p>
+          <h3>- Emily Davis</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ready for Your Journey Section -->
+  <div class="ready-section">
+    <h2>Are You Ready to Go on Your Journey?</h2>
+    <a href="car-details.html" class="cta-button">Book Your Car Now</a>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-links">
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="car-details.html">Check Out Our Cars</a>
+      <a href="https://facebook.com/clarkescarrental" target="_blank">Follow on Social Media</a>
+    </div>
+    <p>&copy; 2025 Clarke's Car Rental. All rights reserved.</p>
+    <div class="footer-image"></div>
+  </footer>
+
+  <!-- JavaScript for Mobile Menu -->
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navbarLinks = document.querySelector('.navbar-links');
+
+    mobileMenu.addEventListener('click', () => {
+      navbarLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

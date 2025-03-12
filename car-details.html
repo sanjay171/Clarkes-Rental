@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Details - Clarke's Car Rental</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Sticky Navbar -->
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a href="index.html">Clarke's Car Rental</a>
+    </div>
+    <ul class="navbar-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="navbar-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Clarke's Car Rental</h1>
+    <p>Drive Your Way!</p>
+  </header>
+
+  <!-- Car Details Section -->
+  <div class="container">
+    <div class="car-grid">
+      <!-- Honda Fit -->
+      <div class="car-details">
+        <img src="Honda.jpg" alt="White Honda Fit 2015">
+        <h2>2015 White Honda Fit</h2>
+        <p>
+          <strong>Features:</strong> 5 Seats, Air Conditioning, Fuel Efficient, Great for City Driving<br>
+          <strong>Price:</strong> $5000/day or $34000/week<br>
+          <strong>Availability:</strong> Book Now!
+        </p>
+        <a href="reserve.html" class="cta-button">Reserve Now</a>
+      </div>
+
+      <!-- Nissan AD Wagon -->
+      <div class="car-details">
+        <img src="NissanAD.jpg" alt="White Nissan AD Wagon 2015">
+        <h2>2015 White Nissan AD Wagon</h2>
+        <p>
+          <strong>Features:</strong> 5 Seats, Air Conditioning, Fuel Efficient, Great for City Driving<br>
+          <strong>Price:</strong> $5000/day or $34000/week<br>
+          <strong>Availability:</strong> Book Now!
+        </p>
+        <a href="reserve.html" class="cta-button">Reserve Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ready for Your Journey Section -->
+  <div class="ready-section">
+    <h2>Are You Ready to Go on Your Journey?</h2>
+    <a href="car-details.html" class="cta-button">Book Your Car Now</a>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-links">
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="car-details.html">Check Out Our Cars</a>
+      <a href="https://facebook.com/clarkescarrental" target="_blank">Follow on Social Media</a>
+    </div>
+    <p>&copy; 2025 Clarke's Car Rental. All rights reserved.</p>
+    <div class="footer-image"></div>
+  </footer>
+
+  <!-- JavaScript for Mobile Menu -->
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navbarLinks = document.querySelector('.navbar-links');
+
+    mobileMenu.addEventListener('click', () => {
+      navbarLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

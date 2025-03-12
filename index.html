@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clarke's Car Rental</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Sticky Navbar -->
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a href="index.html">Clarke's Car Rental</a>
+    </div>
+    <ul class="navbar-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="navbar-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>Clarke's Car Rental</h1>
+    <p>Drive Your Way!</p>
+  </header>
+
+  <!-- Rest of your content -->
+  <div class="container">
+    <!-- Your content here -->
+  </div>
+
+  <!-- JavaScript for Mobile Menu -->
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navbarLinks = document.querySelector('.navbar-links');
+
+    mobileMenu.addEventListener('click', () => {
+      navbarLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
+
+  <!-- Hero Section -->
+  <div class="hero-image">
+    <div class="hero-text">
+      <h2>Your Journey Starts Here</h2>
+      <p>Affordable, Reliable, and Ready for Your Adventure!</p>
+      <a href="car-details.html" class="cta-button">Check Out Our Cars</a>
+    </div>
+  </div>
+
+  <!-- Why Choose Us Section -->
+  <div class="container">
+    <div class="why-choose-us">
+      <h2><i class="fas fa-star"></i> Why Choose Clarke's Car Rental?</h2>
+      <ul>
+        <li><i class="fas fa-check-circle"></i> <strong>Best Price Guarantee:</strong> Enjoy top-notch services at unbeatable prices.</li>
+        <li><i class="fas fa-check-circle"></i> <strong>24/7 Online Booking:</strong> Book your perfect car anytime, anywhere.</li>
+        <li><i class="fas fa-check-circle"></i> <strong>Wide Range of Vehicles:</strong> Choose from our well-maintained fleet.</li>
+        <li><i class="fas fa-check-circle"></i> <strong>Self-Drive Options:</strong> Explore at your own pace.</li>
+        <li><i class="fas fa-check-circle"></i> <strong>Chauffeur Services:</strong> Sit back and relax with our professional drivers.</li>
+        <li><i class="fas fa-check-circle"></i> <strong>Airport Transfers:</strong> Hassle-free pick-up and drop-off services.</li>
+        <li><i class="fas fa-check-circle"></i> <strong>Delivery Services:</strong> Fast and affordable delivery for your needs.</li>
+        <li><i class="fas fa-check-circle"></i> <strong>Flexible Payment Options:</strong> We accept PayPal, GCash, bank deposits, and more.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Ready for Your Journey Section -->
+  <div class="ready-section">
+    <h2>Are You Ready to Go on Your Journey?</h2>
+    <a href="car-details.html" class="cta-button">Book Your Car Now</a>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-links">
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="car-details.html">Check Out Our Cars</a>
+      <a href="https://facebook.com/clarkescarrental" target="_blank">Follow on Social Media</a>
+    </div>
+    <p>&copy; 2025 Clarke's Car Rental. All rights reserved.</p>
+    <div class="footer-image"></div>
+  </footer>
+</body>
+</html>
